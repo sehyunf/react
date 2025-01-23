@@ -11,7 +11,7 @@ const CheckMessage = (e) => {
     if(e.target.checked){
       setChecked(check.concat(e.target.value," "))
     }else{
-      setChecked(check.filter((data) => !(data=== e.target.value)))
+      setChecked(check.filter((data) => !(data === e.target.value)))
     }
   }
 
