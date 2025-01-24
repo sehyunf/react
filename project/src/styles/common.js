@@ -13,6 +13,7 @@ export const flexCenterColumn = css`
   align-items : center;
 ` 
 export const h1Bold = css`
+  font-family: 'Pretendard-Regular';
   font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
   line-height: ${({theme}) => theme.FONT_LINE["h1"]};
 `

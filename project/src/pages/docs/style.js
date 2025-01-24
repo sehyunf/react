@@ -58,4 +58,18 @@ S.P = styled.p`
 S.H1 = styled.h1`
   ${h1Bold}
 `
+
+S.FontAwesomeWrap = styled.div`
+/* 자기자신 선택자 : & */
+& p{}
+& > div{}
+& .box{}
+.box{}
+& svg { 
+  font-size: 300px;
+}
+& path {
+    color: purple;
+  }
+  `
 export default S;

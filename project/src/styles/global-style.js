@@ -9,8 +9,14 @@ const GlobalStyle = createGlobalStyle`
     src: url(${process.env.PUBLIC_URL}/assets/fonts/SUIT-Bold.otf) format('opentype');
     font-weight: normal;
     font-style: 100;
-}
+  }
 
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url(${process.env.PUBLIC_URL}/assets/fonts/Pretendard-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
 p {
   font-family: 'SUIT-Regular';
   font-weight: 700;

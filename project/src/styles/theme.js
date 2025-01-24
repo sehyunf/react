@@ -3,7 +3,7 @@ const theme = {};
 theme.PALLETE = {
     primary: {
         main: "#EE3333",
-        sub: "#fff4d8",
+        sub: "#000",
     },
     secondary: "#f1ebf5",
     white: "#fff",
