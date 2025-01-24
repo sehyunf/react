@@ -14,15 +14,17 @@ const SideEffectTask01 = () => {
         throw new Error("데이터를 불러올 수 없습니다.")
       }
       const datas = await response.json()
-      const falseTodo = await datas.filter((data)=> !data.completed).sort().reverse()
+      const falseTodo = await datas.filter((data)=> !data.completed).sort().reverse().map((datas)=> {return datas.title}).sort()
+      // console.log(sortTodo);
+      
       setTodos(falseTodo)
     }
     getDatas().catch(console.error)
   }, [])
 
-  const todoList = todo.map(({title}, i) => {
-    if(i < 5){
-      return <li key={i}>{title}</li>
+  const todoList = todo.map((data, i) => {
+    if(i < 10){
+      return <li key={i}>{data}</li>
     }
   })
 
