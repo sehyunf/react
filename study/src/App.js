@@ -1,10 +1,12 @@
-// import logo from './logo.svg';
 import './App.css';
-import ParentContainer from './day05/context/basic/ParentContainer';
+import AnimalsContainer from './day05/context/expert/AnimalsContainer';
+// import ParentContainer from './day05/context/basic/ParentContainer';
+// import NormalContainer from './day05/context/normal/NormalContainer';
 function App() {
   return (
     <>
-      <ParentContainer />
+      {/* <NormalContainer/> */}
+      <AnimalsContainer/>
     </>
   );
 }
