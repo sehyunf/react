@@ -1,12 +1,11 @@
+import { Route, RouterProvider, Routes } from 'react-router-dom';
 import './App.css';
-import AnimalsContainer from './day05/context/expert/AnimalsContainer';
-// import ParentContainer from './day05/context/basic/ParentContainer';
-// import NormalContainer from './day05/context/normal/NormalContainer';
+import router from './day06/router/router';
+
 function App() {
   return (
     <>
-      {/* <NormalContainer/> */}
-      <AnimalsContainer/>
+      <RouterProvider router={router} />
     </>
   );
 }

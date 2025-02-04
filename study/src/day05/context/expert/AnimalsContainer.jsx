@@ -1,13 +1,13 @@
 import React from 'react';
 import Animals from './Animals';
-import { AnimalProvider } from './AnimalsContext';
+import { AnimalsProvider } from './AnimalsContext';
 
-// Provider
+// provider로 context 제공
 const AnimalsContainer = () => {
   return (
-    <AnimalProvider>
-      <Animals/>
-    </AnimalProvider>
+    <AnimalsProvider>
+      <Animals />
+    </AnimalsProvider>
   );
 };
 

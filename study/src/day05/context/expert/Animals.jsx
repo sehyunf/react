@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimalConsumer, AnimalsContext } from './AnimalsContext';
+import { AnimalsContext } from './AnimalsContext';
 
 // context에 저장된 동물 세마리를 버튼으로 출력
 // input에 동물을 입력 후 엔터 : 동물 버튼 추가
@@ -19,7 +19,10 @@ const Animals = () => {
           <>
             <input type='text' onKeyDown={onKeyDownAddAnimal}/> 
             <div>
-              {context.state.animalName.map((data) => <button onClick={()=>{actions.insert}}>{data}</button>)}
+            {state.animals.map((animal, i) => (
+            <button key={i} onClick={() => {actions.remove(i)}}>{animal}</button>
+            ))
+            }
             </div>
           </>
     </div>
